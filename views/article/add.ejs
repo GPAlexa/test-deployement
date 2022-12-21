@@ -1,0 +1,32 @@
+<h1> Add Article </h1>
+
+<form method="POST" action="/article/add">
+
+<div class="form-group">
+    <label>Title</label>
+    <input type="text" name="title" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label> Content </label>
+    <textarea name="content" class="form-control"></textarea>
+</div>
+
+<div class="form-group">
+    <label> isPublished </label>
+    <input type="text" name="isPublished"  class="form-control"/>
+</div>
+
+<div class="form-group">
+    <label> Total words</label>
+    <input type="number" name="totalWords"  class="form-control"/>
+</div>
+
+<div class="form-group">
+    <label> Author </label>
+    <input type="text" name="author"  class="form-control"/>
+</div>
+
+<button type="submit" class="btn btn-primary">Create Article </button>
+
+</form>

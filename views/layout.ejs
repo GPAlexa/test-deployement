@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    Shared Header Layout served from layout.ejs file
+    <div><h1>
+        <a href="/" class="noStyle">Blog App</a></h1></div>
+
+    <hr>
+    <nav>
+        <a href="/article/index">Articles</a>
+        <a href="/article/add"> Add Article </a>
+    </nav>
+
+    <%- body %>
+
+    <br><br><hr><br>
+    Shared Footer Layout served from layout.ejs file
+    
+</body>
+</html>

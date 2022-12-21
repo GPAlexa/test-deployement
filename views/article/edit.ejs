@@ -1,0 +1,34 @@
+<h1> Edit Article </h1>
+
+<form method="POST" action="/article/update?_method=PUT">
+
+    <div>
+        <label>Title</label>
+        <input name="title" type="text" value="<%= article.title %>" />
+    </div>
+
+    <div>
+        <label>Content</label>
+        <textarea name="content"> <%= article.content %> </textarea>
+    </div>
+
+    <div>
+        <label>Is Published</label>
+        <input name="isPublished" type="text" value="<%= article.isPublished %>" />
+    </div>
+
+    <div>
+        <label>Total Words</label>
+        <input name="totalWords" type="number" value="<%= article.totalWords %>" />
+    </div>
+
+    <div>
+        <label>Author</label>
+        <input name="author" type="text" value="<%= article.author %>" />
+    </div>
+
+    <input type="hidden" name="id" value="<%= article._id %>" />
+
+    <button type="submit"> Update Article </button>
+
+</form>
